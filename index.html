@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<! -- .stroke = контурный текст -->
+
+<html lang="ru">
+    <head>
+        <meta name = "HTML tags. HTML теги" content="Information about HTML tags and HTML itself. Информация о HTML тегах и самом HTML">
+        <meta charset = "utf-8">
+        <title>Теги и их функции в HTMl</title>
+        <style>
+            body {
+                background-image: url(background6.png);
+            }
+           .stroke {
+            font: 2em Arial, sans-serif;
+            text-shadow: red 0 0 2px;
+           }
+            table {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 14px;
+        margin-left: 5px;
+        border-collapse: collapse;
+        text-align: left;
+        }
+        th, td:first-child {
+        background: #b8bbc2;
+        margin-left: 3px;
+        color: white;
+        padding: 10px 20px;
+        }
+        th, td {
+        border-style: solid;
+        margin-left: 5px;
+        border-width: 0 1px 1px 0;
+        border-color: white;
+        padding: 10px 20px;
+        }
+        td {
+        background: #d2d4d9;
+        }
+        th:first-child, td:first-child {
+        text-align: left;
+        }
+        </style>
+    </head>
+
+    <body>
+        <h3><p align = "center" style = "color: #50545e; font-family: Verdana; padding: 20px; font-size:350%"><b>Приветствую Вас на моем сайте!</b></p></h3>
+        <p align = "center" style = "color: #686d7a; font-family: Century Gothic; font-size:210%"><b>На этом сайте я хочу представить несколько изученных мною тегов HTML!</b></p>
+        <P align = "center" style = "color: #686d7a; font-family: Century Gothic; font-size:210%"><b>Итак, приступим!</b></P>
+        <pb />
+        <pb />
+        <pb />
+        <p align = "justify" style = "color: #1a1a1a; font-family: Century Gothic; font-size:180%; margin-left: 50px"> &nbsp Для начала, важно рассказать, что же такое HTML.</p>
+        <a href = "https://ru.wikipedia.org/wiki/HTML"><img style = "margin-right = 50px; float: right; margin: 0 5px;" src = "html5-logo.png"  alt="HTML5" title="HTML5" /></a>
+        <p align = "justify" style = "color: #1a1a1a; font-family: Century Gothic; font-size:180%; margin-left: 50px; margin-right: 600px"><b>HTML</b> (от англ. <i>HyperText Markup Language</i> — «<i>язык гипертекстовой разметки»</i>) — HTML (или XHTML). Язык HTML интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на экране монитора компьютера или мобильного устройства.</p>
+        <p align = "justify" style = "color: #1a1a1a; font-family: Century Gothic; font-size:180%; margin-left: 50px; margin-right: 600px; margin-top: 50px">Теперь, когда мы ознакомились с HTML, я представляю вам теги, благодаря которым был создан этот сайт.</p>
+
+        <table style = "color: #1a1a1a; font-family: Century Gothic; font-size:150%; margin-left: 50px; margin-right: 600px">
+            <caption style = "align = right"><i>Теги и их функции в HTML</i></caption>
+            <tr>
+                <th>Teги</th>
+                <th>Описание их функций</th>
+            </tr>
+            <tr>
+                <td>&lt! --...--&gt</td>
+                <td>Используется для добавления комментариев.</td>
+            </tr>
+            <tr>
+                <td>&lt!DOCTYPE&gt</td>
+                <td>Объявляет тип документа и предоставляет основную информацию для браузера — его язык и версия.</td>
+            </tr>
+            <tr>
+                <td>&lthead&gt...&lt/head&gt</td>
+                <td>Элемент-контейнер для метаданных HTML-документа, таких как &lttitle&gt, &ltmeta&gt, &ltscript&gt, &ltlink&gt, &ltstyle&gt.</td>
+            </tr>
+            <tr>
+                <td>&ltbody&gt...&lt/body&gt</td>
+                <td>Представляет тело документа (содержимое, не относящееся к метаданным документа).</td>
+            </tr>
+            <tr>
+                 <td>&lthtml&gt...&lt/html&gt</td>
+                  <td>Корневой элемент HTML-документа. Сообщает браузеру, что это HTML-документ. Является контейнером для всех остальных html-элементов.</td>
+            </tr>
+            <tr>
+                 <td>&lttitle&gt...&lt/title&gt</td>
+                  <td>Заголовок HTML-документа, отображаемый в верхней части строки заголовка браузера. Также может отображаться в результатах поиска, поэтому это следует принимать во внимание во время предоставление названия.</td>
+            </tr>
+            <tr>
+                <td>&ltmeta&gt</td>
+                <td>Используется для хранения дополнительной информации о странице. Эту информацию используют браузеры для обработки страницы, а поисковые системы — для ее индексации. В блоке &lthead&gt может быть несколько тегов &ltmeta&gt, так как в зависимости от используемых атрибутов они несут разную информацию.</td>
+            </tr>
+            <tr>
+                <td>&ltpb /&gt</td>
+                <td>Переносит текст на следующую строку.</td>
+            </tr>
+            <tr>
+                <td>&ltp&gt</td>
+                <td>Параграфы в тексте.</td>
+            </tr>
+            <tr>
+                <td>&lth1 - h6&gt...&lt/h1 - h6&gt</td>
+                <td>Создают заголовки шести уровней для связанных с ними разделов.</td>
+            </tr>
+            <tr>
+                <td style = "margin-left = 30px">
+                &lttable&gt...&lt/table&gt
+                    <ul>
+                        <li>&lttr&gt...&lt/tr&gt</li>
+                        <li>&ltth&gt...&lt/th&gt</li>
+                        <li>&lttd&gt...&lt/td&gt</li>
+                    </ul>
+                </td>
+                <td style = "margin-left = 30px">
+                Тег для создания таблицы.
+                    <ul>
+                        <li>Создает строки(!) таблицы.</li>
+                        <li>Создает заглавную ячейку таблицы. Помните о том, что тег &ltth&gt играет не просто визуальную роль, а семантическую. Это важно для поисковых роботов.</li>
+                        <li>Создает ячейку таблицы.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
