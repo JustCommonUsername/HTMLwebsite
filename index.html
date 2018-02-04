@@ -8,14 +8,15 @@
         <meta charset = "utf-8">
         <title>Теги и их функции в HTMl</title>
         <style>
-            body {
-                background-image: url(background6.png);
-            }
-           .stroke {
+        body {
+            background-image: url(background6.png);
+        }
+        .stroke {
             font: 2em Arial, sans-serif;
             text-shadow: red 0 0 2px;
-           }
-            table {
+        }
+
+        table {
         font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
         font-size: 14px;
         margin-left: 5px;
@@ -41,20 +42,67 @@
         th:first-child, td:first-child {
         text-align: left;
         }
+
+        .navbar {
+            font-size: 110%;
+        }
+
+        .nabar-brand {
+            font-size: 190%;
+        }
         </style>
+
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
 
     <body>
-        <h3><p align = "center" style = "color: #50545e; font-family: Verdana; padding: 20px; font-size:350%"><b>Приветствую Вас на моем сайте!</b></p></h3>
+        <div class = "container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style = "font-size: 140%">
+              <a class="navbar-brand" href="https://justcommonusername.github.io/HTMLwebsite/">HTMLtags</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="https://justcommonusername.github.io/HTMLwebsite/">Домой<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://getbootstrap.com">Ссылка на Bootstrap</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Переход на первую страницу</a>
+                      <a class="dropdown-item" href="#">Переход на вторую страницу</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
+
+
+
+        <h3><p align = "center" style = "color: #50545e; font-family: Verdana; padding: 50px; font-size:250%"><b>Приветствую Вас на моем сайте!</b></p></h3>
         <p align = "center" style = "color: #686d7a; font-family: Century Gothic; font-size:210%"><b>На этом сайте я хочу представить несколько изученных мною тегов HTML!</b></p>
         <P align = "center" style = "color: #686d7a; font-family: Century Gothic; font-size:210%"><b>Итак, приступим!</b></P>
         <pb />
         <pb />
         <pb />
-        <p align = "justify" style = "color: #1a1a1a; font-family: Century Gothic; font-size:180%; margin-left: 50px"> &nbsp Для начала, важно рассказать, что же такое HTML.</p>
+        <p align = "justify" style = "color: #1a1a1a; font-family: Century Gothic; font-size:160%; margin-left: 50px"> &nbsp Для начала, важно рассказать, что же такое HTML.</p>
         <a href = "https://ru.wikipedia.org/wiki/HTML"><img style = "margin-right = 50px; float: right; margin: 0 5px;" src = "html5-logo.png"  alt="HTML5" title="HTML5" /></a>
-        <p align = "justify" style = "color: #1a1a1a; font-family: Century Gothic; font-size:180%; margin-left: 50px; margin-right: 600px"><b>HTML</b> (от англ. <i>HyperText Markup Language</i> — «<i>язык гипертекстовой разметки»</i>) — HTML (или XHTML). Язык HTML интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на экране монитора компьютера или мобильного устройства.</p>
-        <p align = "justify" style = "color: #1a1a1a; font-family: Century Gothic; font-size:180%; margin-left: 50px; margin-right: 600px; margin-top: 50px">Теперь, когда мы ознакомились с HTML, я представляю вам теги, благодаря которым был создан этот сайт.</p>
+        <p align = "justify" style = "color: #1a1a1a; font-family: Century Gothic; font-size:160%; margin-left: 50px; margin-right: 600px"><b>HTML</b> (от англ. <i>HyperText Markup Language</i> — «<i>язык гипертекстовой разметки»</i>) — HTML (или XHTML). Язык HTML интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на экране монитора компьютера или мобильного устройства.</p>
+        <p align = "justify" style = "color: #1a1a1a; font-family: Century Gothic; font-size:160%; margin-left: 50px; margin-right: 600px; margin-top: 50px">Теперь, когда мы ознакомились с HTML, я представляю вам теги, благодаря которым был создан этот сайт.</p>
 
         <table style = "color: #1a1a1a; font-family: Century Gothic; font-size:150%; margin-left: 50px; margin-right: 600px">
             <caption style = "align = right"><i>Теги и их функции в HTML</i></caption>
